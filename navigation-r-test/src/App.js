@@ -7,12 +7,11 @@ import About from "./pages/About";
 import ToDo from "./pages/ToDo";
 import Slidebar from "./components/Slidebar";
 
-export const App = () => {
+export default function App() {
   return (
     <BrowserRouter>
       <Slidebar>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/todo" element={<ToDo />}></Route>
           <Route path="/" element={<Dashboard />}></Route>
@@ -20,4 +19,4 @@ export const App = () => {
       </Slidebar>
     </BrowserRouter>
   );
-};
+}
